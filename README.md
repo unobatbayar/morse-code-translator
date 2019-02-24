@@ -1,5 +1,6 @@
 # morse-code-translator
-Transfer text input to morse code, and morse code to text. 
+Transfer text input(A-Z 0-9) to morse code, and morse code to text. 
+Simply clone it, and type 'java Main' on your terminal to run.
 
 
                                           International Morse Code
