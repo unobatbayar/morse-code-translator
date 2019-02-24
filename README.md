@@ -6,4 +6,7 @@ Simply clone it, and type 'java Main' on your terminal to run.
                                           International Morse Code
 ![alt text](https://github.com/unobatbayar/morse-code-translator/blob/master/images/morsecode.png)
 ![alt text](https://github.com/unobatbayar/morse-code-translator/blob/master/images/terminal.png)
-Image is from Chandan Lahiri's youtube video. Accessed[24 Feb 2019]. Available at: https://www.youtube.com/watch?v=Z-kZHXBqj4A&t=4s
+
+
+First image is from Chandan Lahiri's youtube video. Accessed[24 Feb 2019]. Available at: https://www.youtube.com/watch?v=Z-kZHXBqj4A&t=4s
+Second image is terminal/program run demonstration.
