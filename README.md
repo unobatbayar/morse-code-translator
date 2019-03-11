@@ -19,6 +19,7 @@ Terminal
  
 Input
 -----
+Input after choosing 'morse' or 'text'
     1) Hello World
     2) 9328329
     3) Secret message
