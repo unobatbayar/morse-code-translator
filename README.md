@@ -10,29 +10,29 @@ Image is from Chandan Lahiri's youtube video. Accessed[24 Feb 2019]. Available a
 Terminal
 -----
 
-  Welcome to Morse Code translator by Uno!
- -> Type 'morse' to convert text to morse.
- -> Type 'text' to convert morse to text.
- -> Type 'menu' to see this again.
- -> Type 'exit' to exit the program.
+    Welcome to Morse Code translator by Uno!
+    -> Type 'morse' to convert text to morse.
+    -> Type 'text' to convert morse to text.
+    -> Type 'menu' to see this again.
+    -> Type 'exit' to exit the program.
  
  
 Input
 -----
-  1) Hello World
-  2) 9328329
-  3) Secret message
-  4) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
-  5) ----. ...-- ..--- ---.. ...-- ..--- ----.
-  6) .... .. /  .. -- /  ..- -. ---
+    1) Hello World
+    2) 9328329
+    3) Secret message
+    4) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
+    5) ----. ...-- ..--- ---.. ...-- ..--- ----.
+    6) .... .. /  .. -- /  ..- -. ---
   
 Output
 -----
-  1) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
-  2) ----. ...-- ..--- ---.. ...-- ..--- ----.
-  3) ... . -.-. .-. . -.-. - /  -- . ... ... .- --. . /
-  4) hello world
-  5) 9328329
-  6) hi im uno
+    1) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
+    2) ----. ...-- ..--- ---.. ...-- ..--- ----.
+    3) ... . -.-. .-. . -.-. - /  -- . ... ... .- --. . /
+    4) hello world
+    5) 9328329
+    6) hi im uno
 
 
