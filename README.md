@@ -16,10 +16,9 @@ Terminal
     -> Type 'menu' to see this again.
     -> Type 'exit' to exit the program.
  
- 
-Input
+Input 
 -----
-Input after choosing 'morse' or 'text'
+
     1) Hello World
     2) 9328329
     3) Secret message
@@ -29,6 +28,7 @@ Input after choosing 'morse' or 'text'
   
 Output
 -----
+
     1) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
     2) ----. ...-- ..--- ---.. ...-- ..--- ----.
     3) ... . -.-. .-. . -.-. - /  -- . ... ... .- --. . /
