@@ -36,6 +36,8 @@ class Translator {
                 morse = morse + " / ";
             }
         }
+        // Removing extra space from front
+        morse = morse.substring(1, morse.length());
         return morse;
     }
 
@@ -57,7 +59,9 @@ class Translator {
                 }
             }
             text = text + " " + word;
-        } 
+        }
+        // Removing extra space from front
+        text = text.substring(1, text.length()); 
         return text;
     }
 }
