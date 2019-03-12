@@ -33,7 +33,7 @@ class Translator {
                 }
             }
             if (userInput.substring(i, i +1).contains(" ")){
-                morse = morse + " / ";
+                morse = morse + "/";
             }
         }
         // Removing extra space from front
@@ -62,7 +62,8 @@ class Translator {
         }
         // Removing extra space from front
         text = text.substring(1, text.length()); 
-        return text;
+        // Added uppercase return
+        return text.toUpperCase();
     }
 }
 
