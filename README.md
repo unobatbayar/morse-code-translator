@@ -1,7 +1,7 @@
 <div align="center">
   <h1><code>morse-code-translator</code></h1>
 
-  <strong>Transfer text input(A-Z 0-9) to <a href="https://en.wikipedia.org/wiki/Morse_code">morse code</a>, and morse back to text. </strong>
+  <strong>Transfer text (A-Z 0-9) to <a href="https://en.wikipedia.org/wiki/Morse_code">morse code</a>, and morse back to text. </strong>
 
 <h3>
     <a href="https://github.com/unobatbayar/Algorithms/pull/new/master">Contribute</a>
