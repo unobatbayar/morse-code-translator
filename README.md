@@ -14,8 +14,6 @@
 Simply clone it, and type 'java Main' on your terminal to run.
 
 ## Terminal
------
-
     Welcome to Morse Code translator by Uno!
     -> Type 'morse' to convert text to morse.
     -> Type 'text' to convert morse to text.
@@ -23,8 +21,6 @@ Simply clone it, and type 'java Main' on your terminal to run.
     -> Type 'exit' to exit the program.
  
 ## Input 
------
-
     1) HELLO WORLD
     2) 9328329
     3) Secret message
@@ -33,8 +29,6 @@ Simply clone it, and type 'java Main' on your terminal to run.
     6) .... .. /  .. -- /  ..- -. ---
   
 ## Output
------
-
     1) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
     2) ----. ...-- ..--- ---.. ...-- ..--- ----.
     3) ... . -.-. .-. . -/ -- . ... ... .- --. .
