@@ -4,7 +4,7 @@
   <strong>Convert text (A-Z 0-9) to <a href="https://en.wikipedia.org/wiki/Morse_code">morse code</a>, and morse back to text. </strong>
 
 <h3>
-    <a href="https://github.com/unobatbayar/Algorithms/pull/new/master">Contribute</a>
+    <a href="https://github.com/unobatbayar/morse-code-translator/pull/new/master">Contribute</a>
   </h3>
 
   <sub> Built with ❤️️ on Earth</sub>
@@ -13,7 +13,7 @@
 ## How to run
 Simply clone it, and type 'java Main' on your terminal to run.
 
-Terminal
+## Terminal
 -----
 
     Welcome to Morse Code translator by Uno!
@@ -22,7 +22,7 @@ Terminal
     -> Type 'menu' to see this again.
     -> Type 'exit' to exit the program.
  
-Input 
+## Input 
 -----
 
     1) HELLO WORLD
@@ -32,7 +32,7 @@ Input
     5) ----. ...-- ..--- ---.. ...-- ..--- ----.
     6) .... .. /  .. -- /  ..- -. ---
   
-Output
+## Output
 -----
 
     1) .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
