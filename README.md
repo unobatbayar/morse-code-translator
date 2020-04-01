@@ -7,7 +7,7 @@
     <a href="https://github.com/unobatbayar/morse-code-translator/pull/new/master">Contribute</a>
   </h3>
 
-  <sub> Built by <a href="https://www.twitter.com/unobatbayar">unobatbayar</a> to practice coding and for other people to use.</sub>
+  <sub> Built by <a href="https://www.twitter.com/unobatbayar">unobatbayar</a> for other people to use.</sub>
 </div>
 
 ## How to run
