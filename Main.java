@@ -11,10 +11,10 @@ class Main {
     // our main steps
     public static void mainLoop(){
         
-        // (1) Get user choice
+        // get user choice
         String choice = getInput();
 
-        // (2) Function depending on the choice
+        // function depending on the choice
         switch (choice.toLowerCase()){
             case "morse":
                 print( "\n" + "Please enter the text to convert to morse: ");
@@ -36,11 +36,9 @@ class Main {
                 break;
         }
 
-        // (3) Loop
         mainLoop();
     }
 
-    // show menu using print
     public static void showMenu(){
         print( "\n" +
         "Welcome to Morse Code translator by Uno!" + "\n"
@@ -49,12 +47,11 @@ class Main {
         + " -> Type 'menu' to see this again."  + "\n" 
         + " -> Type 'exit' to exit the program."  + "\n");
     }
-    //print function
+
     public static void print(String message){
         System.out.println(message);
     }
 
-    //get user input function
     public static String getInput()
     {
         Scanner scanner = new Scanner(System.in);  

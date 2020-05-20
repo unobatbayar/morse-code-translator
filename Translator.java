@@ -29,14 +29,14 @@ class Translator {
         for(int i = 0; i <userInput.length(); i++){
             for(int k = 0; k <morseCode.length; k++){
                 if (userInput.substring(i, i + 1).equals(textAndNumbers[k])){
-                    morse = morse + " " + morseCode[k];
+                    morse += " " + morseCode[k];
                 }
             }
             if (userInput.substring(i, i +1).contains(" ")){
-                morse = morse + "/";
+                morse += "/";
             }
         }
-        // Removing extra space from front
+        // removing extra space from front
         morse = morse.substring(1, morse.length());
         return morse;
     }
@@ -46,23 +46,23 @@ class Translator {
         String text = "";
         // string split by "/" because that's how we divided words,
         String[] words = userInput.split("/");
-        for(int i = 0; i<words.length; i++){
-            // Temporary varibale to store a word (empty every loop)
+        for(int i = 0; i < words.length; i++){
+            // temporary varibale to store a word (empty every loop)
             String word = "";
             // the divide the letters by space.
             String[] letters = words[i].split("\\s+");
             for(int k = 0; k<letters.length; k++){
                 for(int j = 0; j <textAndNumbers.length; j++){
                     if (letters[k].equals(morseCode[j])){
-                        word = word + textAndNumbers[j];
+                        word += textAndNumbers[j];
                     }
                 }
             }
-            text = text + " " + word;
+            text += " " + word;
         }
-        // Removing extra space from front
+        // removing extra space from front
         text = text.substring(1, text.length()); 
-        // Added uppercase return
+        // added uppercase return
         return text.toUpperCase();
     }
 }
