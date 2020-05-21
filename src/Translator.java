@@ -1,69 +1,56 @@
 import java.util.*;
 /**
  * @author unobatbayar
- * Morse code translator, Translator class
+ * Translator 
  */
+
+ // A-Z 1-9-0 Morse Code International 
 class Translator {
 
-    public String userInput;
+    private Hashtable<String, String> morseHashtable = new Hashtable<>();
 
-    public Translator(String input){
-        userInput = input;
-    }
-    // A-Z 1-9-0 in order
-    public String[] textAndNumbers = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
-    "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", 
-    "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"};
+    private String[] textAndNumbers = { "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "1", "2", "3", "4", "5", "6", "7", "8", "9", "0"}; 
 
-    // morse code international in order
-    public String[] morseCode = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", 
-    ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", ".-.",
-    "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----",
-    "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.",
-    "-----"};
+    private String[] morseCode = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "-----"};
     
-    public String toMorse(){
-        // morse code to return
-        String morse = "";
-        // nested for loop to check each letter
-        for(int i = 0; i <userInput.length(); i++){
-            for(int k = 0; k <morseCode.length; k++){
-                if (userInput.substring(i, i + 1).equals(textAndNumbers[k])){
-                    morse += " " + morseCode[k];
-                }
-            }
-            if (userInput.substring(i, i +1).contains(" ")){
-                morse += "/";
-            }
+    public Translator(){
+
+        morseHashtable = new Hashtable<>();
+        for(int i = 0; i<morseCode.length; i++){
+            morseHashtable.put(textAndNumbers[i], morseCode[i]);
+            morseHashtable.put(morseCode[i], textAndNumbers[i]);
         }
-        // removing extra space from front
-        morse = morse.substring(1, morse.length());
-        return morse;
     }
 
-    public String toText(){
-        // text to return
-        String text = "";
-        // string split by "/" because that's how we divided words,
-        String[] words = userInput.split("/");
+    public String translate(String input){
+
+        String translated = "";
+
+        // found text
+        if(Character.isLetter(input.charAt(0)) || Character.isDigit(input.charAt(0))){
+            for(int i = 0; i <input.length(); i++){
+                if(morseHashtable.containsKey(input.charAt(i) + "")) translated += " " + morseHashtable.get(input.charAt(i) + "");
+                if (input.substring(i, i + 1 ).equals(" ")) translated += "/";     
+            }
+            
+            return translated.substring(1);
+        }
+
+        // found Morse code
+        String[] words = input.split("/");
+
         for(int i = 0; i < words.length; i++){
-            // temporary varibale to store a word (empty every loop)
-            String word = "";
             // the divide the letters by space.
             String[] letters = words[i].split("\\s+");
-            for(int k = 0; k<letters.length; k++){
-                for(int j = 0; j <textAndNumbers.length; j++){
-                    if (letters[k].equals(morseCode[j])){
-                        word += textAndNumbers[j];
-                    }
-                }
+            String word = "";
+            for(int k = 0; k < letters.length; k++){
+                if(morseHashtable.containsKey(letters[k])) word += morseHashtable.get(letters[k]);
             }
-            text += " " + word;
+
+            translated += " " + word;
         }
-        // removing extra space from front
-        text = text.substring(1, text.length()); 
-        // added uppercase return
-        return text.toUpperCase();
+
+        return translated.substring(1);
     }
 }
 
