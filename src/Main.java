@@ -21,7 +21,7 @@ class Main {
     }
 
     private static void showMenu(String title){
-        print( "\n" + title + " (type ':wq' to exit)" + "\n" + "-> Start by entering text or morse.");
+        print( "\n" + title + " (type ':wq' to exit)" + "\n" + "-> Start by entering text or morse:");
     }
 
     private static void print(String message){
