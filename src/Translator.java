@@ -15,7 +15,6 @@ class Translator {
     
     public Translator(){
 
-        morseHashtable = new Hashtable<>();
         for(int i = 0; i<morseCode.length; i++){
             morseHashtable.put(textAndNumbers[i], morseCode[i]);
             morseHashtable.put(morseCode[i], textAndNumbers[i]);
