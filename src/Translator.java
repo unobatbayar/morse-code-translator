@@ -14,7 +14,6 @@ class Translator {
     private String[] morseCode = { ".-", "-...", "-.-.", "-..", ".", "..-.", "--.", "....", "..", ".---", "-.-", ".-..", "--", "-.", "---", ".---.", "--.-", ".-.", "...", "-", "..-", "...-", ".--", "-..-", "-.--", "--..", ".----", "..---", "...--", "....-", ".....", "-....", "--...", "---..", "----.", "-----"};
     
     public Translator(){
-
         for(int i = 0; i<morseCode.length; i++){
             morseHashtable.put(textAndNumbers[i], morseCode[i]);
             morseHashtable.put(morseCode[i], textAndNumbers[i]);
@@ -24,7 +23,7 @@ class Translator {
     public String translate(String input){
 
         String translated = "";
-
+     
         // found text
         if(Character.isLetter(input.charAt(0)) || Character.isDigit(input.charAt(0))){
             for(int i = 0; i <input.length(); i++){
@@ -37,7 +36,6 @@ class Translator {
 
         // morse
         String[] words = input.split("/");
-
         for(int i = 0; i < words.length; i++){
             String[] letters = words[i].split("\\s+");
             String word = "";
