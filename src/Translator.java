@@ -28,24 +28,22 @@ class Translator {
         // found text
         if(Character.isLetter(input.charAt(0)) || Character.isDigit(input.charAt(0))){
             for(int i = 0; i <input.length(); i++){
-                if(morseHashtable.containsKey(input.charAt(i) + "")) translated += " " + morseHashtable.get(input.charAt(i) + "");
+                if(morseHashtable.containsKey(input.substring(i, i + 1))) translated += " " + morseHashtable.get(input.substring(i, i + 1));
                 if (input.substring(i, i + 1 ).equals(" ")) translated += "/";     
             }
             
             return translated.substring(1);
         }
 
-        // found Morse code
+        // morse
         String[] words = input.split("/");
 
         for(int i = 0; i < words.length; i++){
-            // the divide the letters by space.
             String[] letters = words[i].split("\\s+");
             String word = "";
             for(int k = 0; k < letters.length; k++){
                 if(morseHashtable.containsKey(letters[k])) word += morseHashtable.get(letters[k]);
             }
-
             translated += " " + word;
         }
 
