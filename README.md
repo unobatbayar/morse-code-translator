@@ -13,7 +13,6 @@
 ## How to run
 Simply clone it, and type 'java Main' on your terminal to run.
 
-## Terminal
     Welcome to Morse Code translator by Uno! (type ':wq' to exit)
     -> Start by entering text or morse:
  
