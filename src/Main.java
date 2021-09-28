@@ -13,7 +13,7 @@ class Main {
     private static void mainLoop(){
         String choice = getInput();
 
-        if(choice.equals(":wq")) System.exit(0);
+        if(choice.equals(":q")) System.exit(0);
         if(choice.length() > 0) print(morseTranslator.translate(choice.toLowerCase())+ "\n");
         else showMenu("Nothing to translate...");
 
@@ -21,7 +21,7 @@ class Main {
     }
 
     private static void showMenu(String title){
-        print( "\n" + title + " (type ':wq' to exit)" + "\n" + "-> Start by entering text or morse:");
+        print( "\n" + title + " (type ':q' to exit)" + "\n" + "-> Start by entering text or morse:");
     }
 
     private static void print(String message){
