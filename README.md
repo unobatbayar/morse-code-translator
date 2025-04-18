@@ -21,11 +21,9 @@ Simply clone it, and type `java Main` on your terminal in the cloned directory t
     july 4 1776
     .... . .-.. .-.. --- /  .-- --- .-. .-.. -..
     .--- ..- .-.. -.--/ ....-/ .---- --... --... -....
-    ..- -. ---/ -... .- - -... .- -.-- .- .-.
   
 ## Output
     .- .- .-. --- -./ ... .-- .- .-. - --..
     .--- ..- .-.. -.--/ ....-/ .---- --... --... -....
     hello world
     july 4 1776
-    uno batbayar
